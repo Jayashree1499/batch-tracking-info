@@ -19,8 +19,6 @@ import com.bti.dto.Status;
 public class BatchDao {
 	
 	@Autowired
-	EntityManagerFactory entityManagerFactory;
-	@Autowired
 	EntityManager entityManager;
 	@Autowired
 	EntityTransaction entityTransaction;
