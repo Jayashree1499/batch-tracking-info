@@ -61,7 +61,7 @@ public class UserDao {
 
 	}
 
-	public void Test() {
-		modifyUserStatus(123, Status.INACTIVE);
-	}
+//	public void Test() {
+//		modifyUserStatus(123, Status.INACTIVE);
+//	}
 }
