@@ -32,7 +32,8 @@ public class User {
 	String email;
 	@Column(nullable = false)
 	String password;
-	String role;
+	private Role role;
+	private Status status;
 	@OneToMany
 	List<Batch> batch;
 
