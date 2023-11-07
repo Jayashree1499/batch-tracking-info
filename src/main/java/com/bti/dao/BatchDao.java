@@ -25,7 +25,7 @@ public class BatchDao {
 	@Autowired
 	EntityTransaction entityTransaction;
 	
-	public Batch saveBranch(Batch batch) {
+	public Batch saveBatch(Batch batch) {
 		entityTransaction.begin();
 		entityManager.persist(batch);
 		entityTransaction.commit();
