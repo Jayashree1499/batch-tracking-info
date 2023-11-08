@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <form action="" > 
+  <form action="login" > 
      Email:<input type="email" name="email" placeholder="email">
-     Password:<input type="password" name="password" placeholder="password">
-     <input type="button" value="submit">
-  </form>
+     Password:<input type="password" name="password" placeholder="password"> <input type="submit" value="submit">
+	</form>
 </body>
 </html>
