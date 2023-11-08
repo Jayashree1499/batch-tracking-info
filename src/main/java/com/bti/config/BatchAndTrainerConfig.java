@@ -9,10 +9,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({ "com.bti.controller", "com.bti.dao", "com.bti.dto" })
+@ComponentScan({ "com.bti" })
 public class BatchAndTrainerConfig {
-	@Bean
+	@Bean(name = "em")
 	public EntityManager getEntityManager() {
+		System.out.println("Hi");
 		return Persistence.createEntityManagerFactory("vikas").createEntityManager();
 	}
 
