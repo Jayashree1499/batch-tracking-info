@@ -31,7 +31,9 @@ public class UserController {
 			if (user.getRole() == Role.HR) {
 
 				List<User> users = userdao.userbasedOnRole(Role.TRAINEE);
+
 				req.setAttribute("list_1", users);
+
 				mv = new ModelAndView("hr.jsp");
 				mv.addObject("list", users);
 			} else if (user.getRole() == Role.TRAINEE) {
