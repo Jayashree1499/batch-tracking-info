@@ -28,16 +28,15 @@ public class UserController {
 		ModelAndView mv = null;
 		if (user != null) {
 			if (user.getRole() == Role.HR) {
-				
-			List<User> users	=userdao.userbasedOnRole(Role.TRAINEE);
-			
+
+				List<User> users = userdao.userbasedOnRole(Role.TRAINEE);
+
 				mv = new ModelAndView("hr.jsp");
 				mv.addObject("list", users);
 			} else if (user.getRole() == Role.TRAINEE) {
 				mv = new ModelAndView("trainee.jsp");
 			}
-		}
-		else {
+		} else {
 			mv = new ModelAndView("login.jsp");
 		}
 		return mv;
