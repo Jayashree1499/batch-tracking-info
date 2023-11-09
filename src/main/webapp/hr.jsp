@@ -42,5 +42,6 @@ a {
 		%>
 	</table>
 	<a href="addtrainee.jsp">AddTrainer</a>
+	<a href="assign.jsp">Assign bacth</a>
 </body>
 </html>

@@ -56,8 +56,7 @@ public class UserController {
 		}
 		ModelAndView modelAndView = new ModelAndView("login.jsp");
 		return modelAndView;
-	}
-	
+	}	
 	@GetMapping("/st")
 	public ModelAndView saveTrainee(HttpServletRequest req) {
 		String name=req.getParameter("name");
